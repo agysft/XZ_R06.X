@@ -80,7 +80,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ADC" name="AN3"/>
-         <value>disabled</value>
+         <value>enabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ADC" name="AN4"/>
@@ -2664,7 +2664,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="FVR" name="cdafvrVoltage"/>
-         <value></value>
+         <value/>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="FVR" registerAlias="FVRCON" settingAlias="ADFVR" alias="1x"/>
@@ -4000,7 +4000,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Pin Module" name="Custom Name RA4"/>
-         <value/>
+         <value>channel_AN3</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Pin Module" name="Custom Name RA5"/>
@@ -5444,7 +5444,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="Pin Module" registerAlias="WPUA"/>
-         <value>16</value>
+         <value>0</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="Pin Module" registerAlias="WPUC"/>
@@ -6000,7 +6000,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="Pin Module" registerAlias="WPUA" settingAlias="WPUA4"/>
-         <value>set</value>
+         <value>clear</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="Pin Module" registerAlias="WPUA" settingAlias="WPUA5"/>
@@ -6586,7 +6586,7 @@
       </entry>
       <entry>
          <file>mcc_generated_files/adc.h</file>
-         <hash>3f66380458c4a31204629daf15f665ff4b14d1079f041b11cfc2e6593b051bf8</hash>
+         <hash>d1cd09a34204bef27a4a132ff4786dc7f189a9c4e89183d89fe6c4bc1ee8b227</hash>
       </entry>
       <entry>
          <file>mcc_generated_files/clc1.c</file>
@@ -6638,11 +6638,11 @@
       </entry>
       <entry>
          <file>mcc_generated_files/mcc.c</file>
-         <hash>e3da24c4e4f191d5b61e61fa9805b7259962e7d5bee2027a305a368f914ff31f</hash>
+         <hash>ab520c2678e2478b472f82a5ad231f93a6d31159195bf0cb8de55c7764edec5a</hash>
       </entry>
       <entry>
          <file>mcc_generated_files/mcc.h</file>
-         <hash>d30bd4ae267174f8c63332acde79d765b60a549a3df35e26c974397db16fb97e</hash>
+         <hash>7c05929b3e1e346bc52e96ce6774e923b6200c8195b61c4e12c692505f1a0e9a</hash>
       </entry>
       <entry>
          <file>mcc_generated_files/opa2.c</file>
@@ -6654,11 +6654,11 @@
       </entry>
       <entry>
          <file>mcc_generated_files/pin_manager.c</file>
-         <hash>a611fa59931d475872e4c6a4a1393f3e9d415fd22746af566778490785707e0a</hash>
+         <hash>4c48eb34e5178b99a395fbeae514f7a4e2bd1d661b22f2d17e0b5fda7785df28</hash>
       </entry>
       <entry>
          <file>mcc_generated_files/pin_manager.h</file>
-         <hash>e928707b419703fc46d6ccd54f6eb4875b3f8273df44ea26afd88dd4112a39a0</hash>
+         <hash>72fd6e2d7649952c5667b75819828f8b0a832fd4971757f9c7cfb6e67130e14f</hash>
       </entry>
       <entry>
          <file>mcc_generated_files/pwm3.c</file>

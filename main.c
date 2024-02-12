@@ -195,29 +195,6 @@ void main(void)
     while (1)
     {
         // Add your application code
-        /* Measure own power supply voltage */
-        ADC_Initialize();
-        ADC_SelectChannel(channel_FVRBuffer1); //4.096V
-        ADC_TemperatureAcquisitionDelay();
-        ADC_StartConversion();
-        while(!ADC_IsConversionDone());
-        convertedValue = ADC_GetConversionResult();
-        VDDValue100 = 419430 / convertedValue;    //Not enough memory to do float operations. So, x100
-
-        /* Measure LED Current value */
-        ADC_Initialize();   //required this
-        ADC_SelectChannel(channel_AN7); //channel_AN3=current sensor
-        ADC_StartConversion();
-        while(!ADC_IsConversionDone());
-        convertedValue = ADC_GetConversionResult();
-
-        convertedValue = (VDDValue100 * (uint32_t)convertedValue ) >> 10;
-        /* 
-         * Rev.05 board may remove the display
-         *  as it does not detect well a large voltage drop in the LEDs
-         */
-        sprintf(DisplayData, "%dmA ", convertedValue ); 
-        if (LCD) { LCD_xy(4,1); LCD_str2( DisplayData ); }
 
         /*
          * If continuous low-level for 500ms, judge no laser.
@@ -274,6 +251,30 @@ void main(void)
         }
         else
         {
+            /* Measure own power supply voltage */
+            ADC_Initialize();
+            ADC_SelectChannel(channel_FVRBuffer1); //4.096V
+            ADC_TemperatureAcquisitionDelay();
+            ADC_StartConversion();
+            while(!ADC_IsConversionDone());
+            convertedValue = ADC_GetConversionResult();
+            VDDValue100 = 419430 / convertedValue;    //Not enough memory to do float operations. So, x100
+
+            /* Measure LED Current value */
+            ADC_Initialize();   //required this
+            if(RC2_GetValue()==0){
+                ADC_SelectChannel(channel_AN7); // select TopLight current sensor
+            } else {
+                ADC_SelectChannel(channel_AN3); // select BottomLight current sensor
+            }
+            ADC_StartConversion();
+            while(!ADC_IsConversionDone());
+            convertedValue = ADC_GetConversionResult();
+            convertedValue = (VDDValue100 * (uint32_t)convertedValue ) >> 10;
+
+            sprintf(DisplayData, "%dmA ", convertedValue ); 
+            if (LCD) { LCD_xy(4,1); LCD_str2( DisplayData ); }
+
             /* read the air pressure in pipe */
             ADC_Initialize();   //required this
             ADC_SelectChannel(channel_AN2); //channel_AN2=pressure sensor

@@ -95,6 +95,7 @@ typedef struct
 typedef enum
 {
     channel_AN2 =  0x2,
+    channel_AN3 =  0x3,
     channel_AN7 =  0x7,
     channel_FVRBuffer2 =  0x1C,
     channel_Temp =  0x1D,
