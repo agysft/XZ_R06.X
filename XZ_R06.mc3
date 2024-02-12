@@ -2660,11 +2660,11 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="FVR" name="adfvrVoltage"/>
-         <value>2.048 V</value>
+         <value>4.096 V</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="FVR" name="cdafvrVoltage"/>
-         <value>2.048 V</value>
+         <value></value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="FVR" registerAlias="FVRCON" settingAlias="ADFVR" alias="1x"/>
@@ -2732,15 +2732,15 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="FVR" registerAlias="FVRCON"/>
-         <value>138</value>
+         <value>131</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="FVR" registerAlias="FVRCON" settingAlias="ADFVR"/>
-         <value>2x</value>
+         <value>4x</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="FVR" registerAlias="FVRCON" settingAlias="CDAFVR"/>
-         <value>2x</value>
+         <value>off</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="FVR" registerAlias="FVRCON" settingAlias="FVREN"/>
@@ -6622,7 +6622,7 @@
       </entry>
       <entry>
          <file>mcc_generated_files/fvr.c</file>
-         <hash>402b9e239dc92bd3334fb69e84b93802abaee15e4bcf46f92521201e97fc80af</hash>
+         <hash>f2ae3400fbe1489fc2c88d29e75a947804f1f134923dbf527f7e71584ae0fbc6</hash>
       </entry>
       <entry>
          <file>mcc_generated_files/fvr.h</file>
@@ -6638,11 +6638,11 @@
       </entry>
       <entry>
          <file>mcc_generated_files/mcc.c</file>
-         <hash>ab520c2678e2478b472f82a5ad231f93a6d31159195bf0cb8de55c7764edec5a</hash>
+         <hash>e3da24c4e4f191d5b61e61fa9805b7259962e7d5bee2027a305a368f914ff31f</hash>
       </entry>
       <entry>
          <file>mcc_generated_files/mcc.h</file>
-         <hash>7c05929b3e1e346bc52e96ce6774e923b6200c8195b61c4e12c692505f1a0e9a</hash>
+         <hash>d30bd4ae267174f8c63332acde79d765b60a549a3df35e26c974397db16fb97e</hash>
       </entry>
       <entry>
          <file>mcc_generated_files/opa2.c</file>

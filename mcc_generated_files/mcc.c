@@ -57,8 +57,8 @@ void SYSTEM_Initialize(void)
     FVR_Initialize();
     CLC1_Initialize();
     ADC_Initialize();
-    OPA2_Initialize();
     CLC2_Initialize();
+    OPA2_Initialize();
     PWM3_Initialize();
     TMR2_Initialize();
 }

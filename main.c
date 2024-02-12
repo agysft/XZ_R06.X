@@ -197,7 +197,7 @@ void main(void)
         // Add your application code
         /* Measure own power supply voltage */
         ADC_Initialize();
-        ADC_SelectChannel(channel_FVRBuffer1); //2.048V
+        ADC_SelectChannel(channel_FVRBuffer1); //4.096V
         ADC_TemperatureAcquisitionDelay();
         ADC_StartConversion();
         while(!ADC_IsConversionDone());
@@ -283,7 +283,7 @@ void main(void)
 
             convertedValue = ((VDDValue100 * (uint32_t)convertedValue ) >> 10);
             LCD_Meter15R((convertedValue-50) >>4);
-            sprintf(DisplayData, "%d", convertedValue ); 
+            sprintf(DisplayData, "%3d", convertedValue ); 
             if (LCD) { LCD_xy(0,1); LCD_str2( DisplayData ); }
         }
     }
