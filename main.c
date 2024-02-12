@@ -263,9 +263,9 @@ void main(void)
             /* Measure LED Current value */
             ADC_Initialize();   //required this
             if(RC2_GetValue()==0){
-                ADC_SelectChannel(channel_AN7); // select TopLight current sensor
-            } else {
                 ADC_SelectChannel(channel_AN3); // select BottomLight current sensor
+            } else {
+                ADC_SelectChannel(channel_AN7); // select TopLight current sensor
             }
             ADC_StartConversion();
             while(!ADC_IsConversionDone());
